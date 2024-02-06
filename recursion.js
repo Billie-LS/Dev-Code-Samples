@@ -14,7 +14,7 @@ function getAllResults() {
     // Check if nextPage is not null and allowAPI flag is true
     if (this.nextPage != null && this.allowAPI == true) {
 
-        // Make an HTTP GET request using axios
+        // Make HTTP GET request using axios
         axios.get(this.nextPage).then((res) => {
 
             // Concatenate current search results with results from response
